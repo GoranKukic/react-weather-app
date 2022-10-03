@@ -12,11 +12,8 @@ Thi app can:
 - dynamicaluy addig icon for current weather condition (snow, rain, sunny),
 ## Screnshoot
 
-[![Preview](/src/assets/react-weather-app.jpg)]
+(/src/assets/react-weather-app.jpg)
 
-## Live preview
-
-[See live here](https://gorankukic.github.io/react-weather-app/)
 
 ## Development requirements
 
