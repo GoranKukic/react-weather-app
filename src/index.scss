@@ -15,8 +15,32 @@ body {
   transition: 0.4s ease-out;
 }
 
+.very-cold {
+  background-image: url('./assets/very-cold-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s ease-out;
+}
+
+.cold {
+  background-image: url('./assets/cold-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s ease-out;
+}
+
 .warm {
   background-image: url('./assets/warm-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s ease-out;
+}
+
+.hot {
+  background-image: url('./assets/hot-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s ease-out;
 }
 
 main {
@@ -45,8 +69,8 @@ main {
   outline: none;
 
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
-  margin-top: -25px;
+  border-radius: 16px;
+  margin-top: 25px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 
@@ -104,4 +128,12 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    height: 100%;
+    min-height: 80px;
+  }
 }

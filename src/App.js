@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 const api = {
-  key: '8ce1bffa10d5f3ad9f9ce106fc4d66d0',
+  key: 'b5b4d171c435ebdf766f9a040653c148',
   base: 'https://api.openweathermap.org/data/2.5/',
 };
+
+
 
 function App() {
   const [query, setQuery] = useState('');
@@ -19,6 +21,7 @@ function App() {
         });
     }
   };
+
 
   const dateBuilder = (d) => {
     let months = [
@@ -53,13 +56,27 @@ function App() {
     return `${day} ${date} ${month} ${year}`;
   };
 
+
+
+  let backgroundImg = null;
+
+  if (weather?.main?.temp < 5){
+    backgroundImg = "very-cold"
+  }else if(weather?.main?.temp < 15){
+    backgroundImg = "cold"
+  }else if(weather?.main?.temp < 35){
+    backgroundImg = "warm"
+  }else{
+    backgroundImg = "hot"
+  }
+  
+  
+
   return (
     <div
       className={
         typeof weather.main != 'undefined'
-          ? weather.main.temp > 16
-            ? 'app warm'
-            : 'app'
+          ? `${backgroundImg}`
           : 'app'
       }
     >
@@ -83,8 +100,10 @@ function App() {
               <div className="date">{dateBuilder(new Date())}</div>
             </div>
             <div className="weather-box">
-              <div className="temp">{Math.round(weather.main.temp)}°c</div>
-              <div className="weather">{weather.weather[0].main}</div>
+              <div className="temp">{Math.round(weather.main.temp)}°C</div>
+              <div className="weather">{weather.weather[0].main}
+              <img src ={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`}alt="wthr img" />
+              </div>
             </div>
           </div>
         ) : (
