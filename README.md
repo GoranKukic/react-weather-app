@@ -11,9 +11,15 @@ This app can:
 - show current weather conditions in desired place,
 - dynamicaly changes background due to temperature factor,
 - dynamicaluy addig icon for current weather condition (snow, rain, sunny),
-## Screnshoot
 
-[(/src/assets/react-weather-app.jpg)]
+## Live preview
+
+[See live here](https://gorankukic.github.io/react-weather-app)
+
+## Development requirements
+## Preview
+
+[![Screnshoot](/src/assets/react-weather-app.jpg)]
 
 ## Development requirements
 
