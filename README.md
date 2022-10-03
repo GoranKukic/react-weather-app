@@ -1,9 +1,9 @@
 # Weather App
 
 This is web application for weather conditions.
-It is created with React and basic usage of API.
-Styling is done with SCSS.
-
+As API is used openweathermap.org.
+Weather icons are dynamicaly pulled also from openweathermap.org.
+Aplcation is written in React, and styled with SCSS.
 ## The brief
 
 This app can:
@@ -19,7 +19,7 @@ This app can:
 ## Development requirements
 ## Preview
 
-[![Screnshoot](/src/assets/react-weather-app.jpg)]
+![Screnshoot](/src/assets/react-weather-app.jpg)
 
 ## Development requirements
 
