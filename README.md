@@ -1,19 +1,19 @@
 # Weather App
 
 This is web application for weather conditions.
-It is created with 
+It is created with React and basic usage of API.
+Styling is done with SCSS.
 
 ## The brief
 
-Thi app can:
+This app can:
 
 - show current weather conditions in desired place,
 - dynamicaly changes background due to temperature factor,
 - dynamicaluy addig icon for current weather condition (snow, rain, sunny),
 ## Screnshoot
 
-(/src/assets/react-weather-app.jpg)
-
+[(/src/assets/react-weather-app.jpg)]
 
 ## Development requirements
 
