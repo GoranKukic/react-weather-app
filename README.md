@@ -16,7 +16,6 @@ This app can:
 
 [See live here](https://gorankukic.github.io/react-weather-app)
 
-## Development requirements
 ## Preview
 
 ![Screnshoot](/src/assets/react-weather-app.jpg)
